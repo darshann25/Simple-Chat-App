@@ -40,6 +40,14 @@
       $(function(){
         var socket = io.connect();
         var $messageForm = $('#messageForm');
+        var $message = $('#message');
+        var $chat = $('#chat');
+
+        $messageForm.submit(function(e){
+          e.preventDefault();
+          console.log('Submitted');
+          // Stopped at 19:05
+        });
       });
     </script>
   </body>
